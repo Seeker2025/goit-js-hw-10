@@ -58,11 +58,10 @@ function onInputSearch(evt) {
 
 
 function createCountryInfo(country) {
-    // console.log("I'm here too")
-    // console.log(country);
+  
     const markup = country
         .map(({ name, capital, population, flags, languages }) => {
-            const lang = Object.values(languages).join(','); // create array languages
+            const lang = Object.values(languages).join(','); 
             return `
                 <li>
                     <div>
